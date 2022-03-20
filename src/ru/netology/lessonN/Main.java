@@ -11,7 +11,7 @@ public class Main {
         int c = calc.devide.apply( a,  b);
 
         calc.println.accept(c);
-        // деление на 0, надо devide сделать не Integer
+        // деление на 0, сделать проверку, исключение
 
     }
 }

@@ -1,7 +1,5 @@
 package ru.netology.lessonN;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.function.*;
 
 public class Calculator {
@@ -10,7 +8,7 @@ public class Calculator {
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
-    BinaryOperator<Integer> devide = (x, y) ->  {
+    BinaryOperator<Integer> devide = (x, y) -> {
         try {
             return x / y;
         } catch (ArithmeticException e) {
@@ -26,6 +24,4 @@ public class Calculator {
 
     Consumer<Integer> println = System.out::println;
 
-    // Подсказка: обратите внимание на реализацию тернарного оператора в переменной abs.
-    // Для решения проблемы можете реализовать аналог, либо сделать полноценный многострочный блок кода с { return }
 }
